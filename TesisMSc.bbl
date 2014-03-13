@@ -1,0 +1,107 @@
+\begin{thebibliography}{10}
+
+\bibitem[1]{baker1963xiith}
+\textsc{Baker}, R.M.L. ; \textsc{Makemson}, M.W.:
+\newblock \emph{XIIth International Astronautical Congress, Washington, D. C.,
+  1961: proceedings}.
+\newblock Academic Press, 1963
+\newblock (XIIth International Astronautical Congress, Washington, D. C., 1961:
+  Proceedings v. 1)
+
+\bibitem[2]{TUED}
+\textsc{Barragán}, Juan R.~M.:
+\newblock \emph{Desarrillo y Análisis de la Precisión de la Red de Antenas de
+  Referencia GNSS de Extremadura. Trazabilidad de Flotas de Transporte
+  Hortofrutícola}.
+\newblock Extremadura, Universidad de Extremadura, Tesis Doctoral, 2010
+
+\bibitem[3]{GGNASS}
+\textsc{Blas}, M Paz~H. ; \textsc{Ortega}, Juan Carlos~B.:
+\newblock \emph{GPS and GLONASS, Descripción y Aplicaciones}.
+\newblock Madrid, 1998
+
+\bibitem[4]{ppp07}
+\textsc{Changsheng}, Cai ; \textsc{Yang}, Gao:
+\newblock Precise Point Positioning Using Combined GPS and GLONASS
+  Observations.
+\newblock {En: }\emph{Journal of Global Positioning Systems}
+\newblock Vol.6, No.1 (2007), p. 13--22
+
+\bibitem[5]{GPStkug}
+\textsc{Conn}, Tracie ; \textsc{Gaussiran}, Tom ; \textsc{Harris}, R.~B. ;
+  \textsc{Little}, Jon ; \textsc{Mach}, Richard ; \textsc{Munton}, David ;
+  \textsc{Renfro}, Brent ; \textsc{Tolman}, Brian ; \textsc{Craddock}, Timothy
+  ; \textsc{Vermeer}, Martin:
+\newblock \emph{The GPS Toolkit, A User's Guide for Scientists, Engineers and
+  Students}.
+\newblock Texas : Applied Research Laboratories, The University of Texas at
+  Austin and Department of Surveying, Helsinki University of Technology, 2007
+
+\bibitem[6]{thomas11}
+\textsc{Grinter}, Thomas ; \textsc{Roberts}, Craig:
+\newblock Precise Point Positioning: Where are we now?
+\newblock {En: }\emph{International Global Navigation Satellite Systems
+  Society, IGNSS Symposium 2011, 15 ? 17 November}, 2011, p. 1--10
+
+\bibitem[7]{kouba2001}
+\textsc{Kouba}, Jan ; \textsc{Héroux}, Pierre.
+\newblock \emph{GPS Precise Point Positioning Using IGS Orbit Products and GPS
+  Solutions}.
+\newblock 2001
+
+\bibitem[8]{ppp02}
+\textsc{Kouba}, Jan ; \textsc{Héroux}, Pierre.
+\newblock \emph{GPS Precise Point Positioning Using IGS Orbit Products}.
+\newblock 2002
+
+\bibitem[9]{lenz08}
+\textsc{Lenz}, P.:
+\newblock \emph{Simply Rails 2}.
+\newblock SitePoint Pty, Limited, 2008
+\newblock (Safari Books Online). --
+\newblock ISBN 9780980455205
+
+\bibitem[10]{ppp06}
+\textsc{Ovstedal}, Ola ; \textsc{Kjorsvik}, Narve~S.  ; \textsc{Gjevestad}, Jon
+  Glenn~O.:
+\newblock Surveying using GPS Precise Point Positioning.
+\newblock {En: }\emph{TS 43 - GNSS Processing and Applications, Shaping the
+  Change, XXIII FIG Congress, Munich, Germany, October 8-13,}, 2006, p. 1--10
+
+\bibitem[11]{pas10}
+\textsc{Ramírez}, Nathalie~S. ; \textsc{Reyes}, Nohora~M.:
+\newblock \emph{Protoripo de Mapa de Riesgo Ionosferico como Soporte para el
+  Desarrollo e Implementación de GBAS, Precisión de Aproximación Categoria I de
+  una Región Colombiana.}
+\newblock Bogotá, Unidad Administrativa Especial de Aeronáutica Civil - Centro
+  de Estudios Aeronáuticos, Pasantía, 2010
+
+\bibitem[12]{ppp12}
+\textsc{Rizos}, Chris ; \textsc{Janssen}, Volker ; \textsc{Roberts}, Craig  ;
+  \textsc{Grinter}, Thomas:
+\newblock Precise Point Positioning: Is the Era of Differential GNSS
+  Positioning Drawing to an End?
+\newblock {En: }\emph{FIG Working Week 2012,Knowing to manage the territory,
+  protect the environment, evaluate the cultural heritage, Rome, Italy}, 2012,
+  p. 6--10
+
+\bibitem[13]{GUI2012}
+\textsc{Sánchez}, Guillermo.
+\newblock \emph{Sistema posicionamiento global (GPS) y las teorías de la
+  relatividad}.
+\newblock 2012
+
+\bibitem[14]{Tsuji2000}
+\textsc{Tsujii1}, Toshiaki ; \textsc{Harigae1}, Masatoshi ; \textsc{Inagaki1},
+  Toshiharu  ; \textsc{Kanai}, Tatsuo:
+\newblock Flight tests of GPS/GLONASS precise positioning versus dual frequency
+  KGPS pro?le.
+\newblock {En: }\emph{Earth Planets Space}
+\newblock Vol.52, No.1 (2000), p. 825--829
+
+\bibitem[15]{ELPPP2000}
+\textsc{Witchayangkoon}, Boonsap:
+\newblock \emph{Elements of GPS Precise Point Positioning}.
+\newblock Orono, Maine, The University of Maine, Tesis Doctoral, 2000
+
+\end{thebibliography}
