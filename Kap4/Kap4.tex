@@ -1,7 +1,7 @@
-\chapter{Estado del Arte}
-En este Capítulo se realiza una somera exposición acerca de los temas principales y conceptos más relevantes que tienen que ver con el desarrollo del trabajo, teniendo presente la importancia de la incorporación del lector al trabajo que se pretende desarrollar, la explicación de algunos conceptos que resultan esenciales para que se pueda entender cómo se realiza la interacción de los elementos que componen al desarrollo que se desea realizar, siendo estos de dos áreas muy diferentes pero como pretende este trabajo demostrar complementarias.\\
+\chapter{Contexto Teórico}
+En este capítulo se realiza una somera exposición acerca de los temas principales y conceptos teóricos más relevantes relacionados con el desarrollo del trabajo, la explicación de algunos conceptos que resultan esenciales para que se pueda entender cómo se realiza la interacción de los elementos que componen al desarrollo que se desea realizar, siendo estos de dos áreas muy diferentes pero como pretende este trabajo demostrar complementarias.\\
 
-El presente capítulo del trabajo también se encuentra dividido en varias partes, dentro de las cuales como primera medida se exponen los principales conceptos de geodesia satélital  referentes  al sistema global de navegación por satélite GNSS (Global Navigation Satellite System), posteriormente se presenta el proceso que se pretende analizar más a fondo con el procesamiento de datos como es la técnica de posicionamiento por punto preciso y para finalizar el capítulo una explicación de las herramientas que serán evaluadas en la etapa de la arquitectura del sistema en el desarrollo metodológico del trabajo.
+Como primera medida se realiza la exposición  los principales conceptos de geodesia satélital  referentes  al sistema global de navegación por satélite GNSS (Global Navigation Satellite System), posteriormente se presenta el proceso que se pretende analizar más a fondo con el procesamiento de datos como es la técnica de posicionamiento por punto preciso y para finalizar el capítulo una explicación de las herramientas que serán evaluadas en la etapa de la arquitectura del sistema en el desarrollo metodológico del trabajo.\\
 
 \section{Sistema GPS (Global Positioning System)}
 Se presenta en este ítem una introducción a lo que son los aspectos más relevantes del sistema de posicionamiento global, como lo son quien fue el que lo financió y desarrollo, cuantos satélites lo componen, la longitud de onda en que transmite la señales y sus aplicaciones primarias. con el fin de dar a conocer un pequeño resumen de este sistema antes de entrar en el tema de los datos que este proporciona y el uso de estos.\\
@@ -51,7 +51,7 @@ Por otra parte se hace necesaria una definicion del contenido de los ficheros SP
 
 \section{PPP (Procesamiento por Punto Preciso)}
 
-Precise Point Positioning (PPP) es un método de posicionamiento que utiliza los productos extensamente y fácilmente disponibles de órbitas y correcciones de reloj del Sistema Global de Navegación por Satélite (GNSS), por ejemplo, obtenidos a través del Servicio Internacional de GNSS\footnote{IGS - \url{http://igs.org}}, para realizar el posicionamiento de un punto utilizando tan solo un único receptor GNSS.\cite{ppp12,ELPPP2000,ppp02}.\\
+Precise Point Positioning (PPP) es un método de posicionamiento que utiliza los productos extensamente y fácilmente disponibles de órbitas y correcciones de reloj del Sistema Global de Navegación por Satélite (GNSS), por ejemplo, obtenidos a través del Servicio Internacional de GNSS\footnote{IGS (02-03-2014)- \url{http://igs.org}}, para realizar el posicionamiento de un punto utilizando tan solo un único receptor GNSS.\cite{ppp12,ELPPP2000,ppp02}.\\
 
 En \cite{kouba2001} se dice que el modelo usado por el PPP es a grandes rasgos similar al que utiliza el servicio de posicionamiento estándar ofrecido por el GPS. También se puede destacar con respecto al procesamiento por punto preciso que el procesamiento de un día completo de observaciones estáticas de alta receptores de frecuencia dual con un software de procesamiento de PPP produce exactitud posicional en el nivel de centímetro, tanto horizontal como verticalmente. Acortar el período de tiempo de observaciones continuas y pasar de modo estático a cinemático disminuirá la precisión. Por ejemplo 6 horas de observaciones cinemáticas suelen dar precisión a nivel de unos pocos centímetro, mientras que 1 hora de las observaciones da precisión a nivel de decímetro\cite{ppp06}.\\
 
@@ -107,7 +107,7 @@ El conjunto de software que conforma GPSTk es patrocinado por el Laboratorio Esp
 
 Ruby on rails, generalmente abreviado como rails, es un completo framework de desarrollo para aplicaciones web, escrito en el lenguaje de programación Ruby. el uso de este framework depende mucho de la experiencia que se tenga en el ámbito de la programación. Este framework tiene que ser visto desde el contexto del desarrollo de aplicaciones web si realmente se quiere apreciar su potencialidad\cite{lenz08}.\\
 
-En el desarrollo  de este trabajo se pretende realizar una aplicación que siga el modelo vista controlador, este es el mismo que utiliza ruby on rails, por ese motivo es que se ha hecho la elección del mismo, que en este caso va a desempeñar la labor de controlador. Desempeñando la función de Recibir los datos y enviarlos para que sean procesados, luego de este proceso los datos los enviara via correo electronico a el usuario que se realice la solicitud, de esta forma el usuario tendrá procesados sus datos por medio de la técnica de procesamiento por punto preciso y sin antes haber tenido que instalar un programa especializado para este tipo de labor.\\
+En el desarrollo  de este trabajo se pretende realizar una aplicación que siga el modelo vista controlador, este es el mismo que utiliza ruby on rails, por ese motivo es que se ha hecho la elección del mismo, que en este caso va a desempeñar la labor de controlador. Desempeñando la función de Recibir los datos y enviarlos para que sean procesados, luego de este proceso los datos los enviara vía correo electrónico a el usuario que se realice la solicitud, de esta forma el usuario tendrá procesados sus datos por medio de la técnica de procesamiento por punto preciso y sin antes haber tenido que instalar un programa especializado para este tipo de labor.\\
 
 \section{Bootstrap}
 
@@ -121,7 +121,7 @@ Por las razones expuestas anteriormente es que se recurre a esta tecnología como
 
 En la actualidad se ha dado mucha importancia a las aplicaciones web, en vista al futuro próximo donde la mayoría de los procesos van a estar orientados a la web, muchos de los grandes productores de software han ido tomando parte en la red para distribuir sus servicios de esta manera, en ese sentido las aplicaciones relacionadas con el concepto de procesamiento de datos no has sido la excepción y muchos distribuidores y entidades relacionadas con el tema ya empezaron su producción.\\
 
-Uno de los casos más notables lo propone la División de navegación Geodésica del departamento de recursos naturales de Canadá. Lanzando en Noviembre de 2003 dentro del CSRS-PPP que por sus siglas Canadian Spatial Reference System, como un servicio web\footnote{CSRS-PPP -\url{http://webapp.geod.nrcan.gc.ca/geod/tools-outils/ppp.php}} que permite este tipo de procesamiento por punto preciso, una imagen de la aplicación se puede ver en la Figura(\ref{fig:CSRSPPP}).\\
+Uno de los casos más notables lo propone la División de navegación Geodésica del departamento de recursos naturales de Canadá. Lanzando en Noviembre de 2003 dentro del CSRS-PPP que por sus siglas Canadian Spatial Reference System, como un servicio web\footnote{CSRS-PPP (02-03-2014)-\url{http://webapp.geod.nrcan.gc.ca/geod/tools-outils/ppp.php}} que permite este tipo de procesamiento por punto preciso, una imagen de la aplicación se puede ver en la Figura(\ref{fig:CSRSPPP}).\\
 
 \begin{figure}[h]
 \centering
@@ -130,7 +130,7 @@ Uno de los casos más notables lo propone la División de navegación Geodésica del
 \label{fig:CSRSPPP}
 \end{figure}
 
-De la misma forma el IBGE Instituto Brasileiro de Geografia e Estatística pone en funcionamiento su servicio de procesamiento de datos en línea\footnote{IBGE PPP- \url{http://www.ppp.ibge.gov.br/ppp.htm}}, el cual se muestra en la Figura(\ref{fig:IBGEPPP}) y funciona a partir de un archivo que el usuario sube a la red, el cual posteriormente es procesado y el producto de este procesamiento es puesto a disposición para que el usuario lo descargue.\\
+De la misma forma el IBGE Instituto Brasileiro de Geografia e Estatística pone en funcionamiento su servicio de procesamiento de datos en línea\footnote{IBGE PPP (02-03-2014)- \url{http://www.ppp.ibge.gov.br/ppp.htm}}, el cual se muestra en la Figura(\ref{fig:IBGEPPP}) y funciona a partir de un archivo que el usuario sube a la red, el cual posteriormente es procesado y el producto de este procesamiento es puesto a disposición para que el usuario lo descargue.\\
 
 \begin{figure}[h]
 \centering
@@ -139,7 +139,7 @@ De la misma forma el IBGE Instituto Brasileiro de Geografia e Estatística pone e
 \label{fig:IBGEPPP}
 \end{figure}
 
-Otro de los casos de éxito a destacar en cuanto a las aplicaciones que prestan el servicio de posicionamiento por punto preciso es el desarrollado en el departamento de ingeniería de geodesia y geomática en la University of New Brunswick, ubicada en Fredericton - Canadá. Esta Aplicación se llama GAPS\footnote{GAPS PPP - \url{http://gaps.gge.unb.ca/About.html}}, por sus siglas en ingles GPS Analysis and Positioning Software.\\
+Otro de los casos de éxito a destacar en cuanto a las aplicaciones que prestan el servicio de posicionamiento por punto preciso es el desarrollado en el departamento de ingeniería de geodesia y geomática en la University of New Brunswick, ubicada en Fredericton - Canadá. Esta Aplicación se llama GAPS\footnote{GAPS PPP (02-03-2014) - \url{http://gaps.gge.unb.ca/About.html}}, por sus siglas en ingles GPS Analysis and Positioning Software.\\
 
 Al ser una aplicación de tipo web también es un gran antecedente para el trabajo que se desea desarrollar, se incluye en la Figura (\ref{fig:GAPSPPP}) una vista de la pagina web en la que se aloja la aplicación.\\
 
@@ -150,7 +150,7 @@ Al ser una aplicación de tipo web también es un gran antecedente para el trabajo
 \label{fig:GAPSPPP}
 \end{figure}
 
-En el campo del procesamiento de datos satélitales para determinar la posición de un punto, la NASA no podía quedarse atrás y también implementa su aplicación para procesamiento de datos, denominada  Automatic Precise Positioning Service\footnote{NASA PPP - \url{http://apps.gdgps.net/apps_file_upload.php}} de la cual se adjunta una vista en la Figura(\ref{fig:NASAPPP}).\\
+En el campo del procesamiento de datos satélitales para determinar la posición de un punto, la NASA no podía quedarse atrás y también implementa su aplicación para procesamiento de datos, denominada  Automatic Precise Positioning Service\footnote{NASA PPP (02-03-2014) - \url{http://apps.gdgps.net/apps_file_upload.php}} de la cual se adjunta una vista en la Figura(\ref{fig:NASAPPP}).\\
 
 \begin{figure}[h!]
 \centering
