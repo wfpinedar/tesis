@@ -1,6 +1,6 @@
 \chapter{Diseño Metodológico}
 
-El proyecto es concebido como una oportunidad para poner en práctica los conocimientos obtenidos en algunas de las diferentes asignaturas vistas en el transcurso de la carrera, haciendo uso de estas como la herramienta fundamental para poder realizar la estructura de una aplicación que pretende dar solución a una problemática que se presenta en la actualidad, como es el uso de software propietario y de difícil acceso en el área del post procesamiento de datos Rinex. Por tal motivo es indispensable hacer un reconocimiento de las dificultades más conocidas que se presentan en el momento de post-procesar datos satélitales por el método de punto preciso. A esta parte en el desarrollo de la  metodología del proyecto haciendo alusión a el desarrollo de software de denominará de ahora en adelante la etapa de \textit{definición de requerimientos}.\\
+El proyecto es concebido como una oportunidad para poner en práctica los conocimientos obtenidos en algunas de las diferentes asignaturas vistas en el transcurso de la carrera, haciendo uso de el conocimiento proporcionado por estas como la herramienta fundamental para poder realizar la estructura de una aplicación que pretende dar solución a una problemática que se presenta en la actualidad, como es el uso de software propietario y de difícil acceso en el área del post procesamiento de datos Rinex. Por tal motivo es indispensable hacer una recopilación de las dificultades más conocidas que se presentan al momento de post-procesar datos satelitales por el método de punto preciso. A esta parte en el desarrollo de la  metodología del proyecto haciendo alusión al desarrollo de software se de denominará según los estándares de ahora en adelante la etapa de \textit{Definición de Requerimientos}, esta definición es ampliamente usada en \cite{Moore2002,IEEEStd830,Juristo2007}.\\
 
 \begin{figure}[H]
 \centering
@@ -9,28 +9,75 @@ El proyecto es concebido como una oportunidad para poner en práctica los conocim
 \label{fig:MetProy}
 \end{figure}
 
-Por definición de requerimientos se entiende la etapa o el proceso que constituye la principal fuente de información a partir de la cual se diseña, implementa y prueba el sistema. Tiende a ser uno de los procesos más delicados en el desarrollo de un proyecto, esta etapa no se realiza en su totalidad al principio del proyecto sino que es incremental aun cuando el proyecto ya ha comenzado a desarrollarse.\\
+Por definición de requerimientos se entiende la etapa o el proceso que constituye la principal fuente de información a partir de la cual se diseña, implementa y prueba el sistema\cite{IEEEStd830}. Tiende a ser uno de los procesos más delicados en el desarrollo de un proyecto, esta etapa no se realiza en su totalidad al principio del proyecto sino que es incremental aun cuando el proyecto ya ha comenzado a desarrollarse.\\
 
-En otros aspectos también es importante tener en cuenta el diseño de lo que será la \textit{arquitectura del sistema}. la que tendrá que ser acorde con los requerimientos primarios del sistema para que pueda dar solución a estos y de esta forma se cumpla con el propósito de la aplicación. Es indispensable que para que se tenga coherencia con el título del proyecto que los actores involucrados en la arquitectura pertenezcan a la misma familia de software que se pretende desarrollar, tanto las bibliotecas de procesamiento de datos satélitales como las bibliotecas y lenguajes para el desarrollo de la aplicación y la interfaz web.\\
+En otros aspectos también es importante tener en cuenta el diseño de lo que será definir la \textit{Elaboración de Arquitectura del Sistema}\cite{jacobson2004,serrano2010,vogel2011}. la que tendrá que ser acorde con los requerimientos primarios del sistema para que pueda dar solución a estos y de esta forma se cumpla con el propósito de la aplicación. Es indispensable que para que se tenga coherencia con el título del proyecto que los actores involucrados en la arquitectura pertenezcan a la misma familia de software que se pretende desarrollar, tanto las librerías de procesamiento de datos satelitales como las librerías y lenguajes para el desarrollo de la aplicación y la interfaz web.\\
 
-la etapa posterior a la definición de la arquitectura del sistema es el \textit{diseño y desarrollo del sistema}. estando definidas las herramientas que compondrán el sistema y los niveles en los cuales van a actuar cada una de estas se procede a establecer un diseño preliminar con el fin de empezar la etapa de desarrollo de la aplicación.\\ 
+la etapa posterior a la definición de la arquitectura del sistema es el \textit{Diseño y Desarrollo del Sistema}\cite{vogel2011}. Que para el caso de este proyecto ha sido denominado Definición de algoritmos y Desarrollo de la Aplicación, estando definidas las herramientas que compondrán el sistema y los niveles en los cuales van a actuar cada una de estas se procede a establecer un diseño preliminar y selección tanto de los algoritmos matemáticos como de programación con el fin de empezar la etapa de desarrollo de la aplicación.\\ 
 
-Dentro la etapa de diseño y desarrollo se establece como prioridad el uso de patrones de diseño de software, para que el desarrollo de la aplicación esté acorde con las características que deben seguir los patrones de desarrollo de software tales como: que sea comprobable la efectividad del desarrollo en la resolución del problema para el cual se diseñó, como también el hecho de que el desarrollo debe ser reutilizable para que el uso o implementación de este en otros problemas similares sea posible aun bajo distintas circunstancias.\\
+Dentro la etapa de diseño y desarrollo se establece como prioridad el uso de patrones de diseño de software, para que el desarrollo de la aplicación esté acorde con las características que deben seguir los patrones de desarrollo de software tales como: que sea comprobable la efectividad del desarrollo en la resolución del problema para el cual se diseñó, como también el hecho de que el desarrollo debe ser reutilizable para que el uso o implementación de este en otros problemas similares sea posible aun bajo distintas circunstancias\cite{deitel2004,gamma2002,lopez2004}.\\
 
-Por último pero no menos importante esta la etapa de \textit{pruebas a la aplicación}, la cual tiene como propósito realizar una evaluación al desarrollo de la aplicación y de esta forma establecer si esta cumple o no con los los objetivos propuestos. En la etapa de pruebas se debe tener en cuenta un modelo general de pruebas para poder realizar esta de manera ordenada y lo más precisa posible, para que en caso de que se presenten errores reportar estos sea fácil tanto en la etapa de identificación como en la de solución de los mismos. Como desde el principio se pretende que para el desarrollo de la aplicación se aplique un modelo que sea iterativo e incremental esta etapa de pruebas debe estar lo mejor diseñada posible para que las iteraciones del sistema no afecten el desarrollo de toda la aplicación.\\
+Por último pero no menos importante esta la etapa de \textit{Pruebas y Validación} de la aplicación, la cual tiene como propósito realizar una evaluación al desarrollo de la aplicación y de esta forma establecer si esta cumple o no con los los objetivos propuestos. En la etapa de pruebas se deben proponer una hipótesis que posteriormente serán las que nos darán la medida de bondad para el desarrollo realizado. También se debe tener en cuenta un modelo general de pruebas para poder comparar los resultados obtenidos con los que existes y de esta forma poder corroborar la valides de las hipótesis propuestas.\\
+
+Es necesario tener en cuente que para las pruebas que de debe realizar estas de manera ordenada y lo más precisa posible, para que en caso tal que se presenten errores se pueda reportar estos de forma fácil tanto en la etapa de identificación como en la de solución de los mismos. Como desde el principio se pretende que para el desarrollo de la aplicación se aplique un modelo que sea iterativo e incremental esta etapa de pruebas debe estar lo mejor diseñada posible para que las iteraciones del sistema no afecten el desarrollo de toda la aplicación.\\
+
+La etapa de documentación no es incluida dentro de las etapas maestras por que no es de gran relevancia en el desarrollo teórico del proyecto, pero si se coloca en el documento porque es esencial para el desarrollo practico del proyecto.\\
 
 \section{Definición de Requerimientos y licencia de la Aplicación}
 
-Estándar IEEE 830
+Esta sección generalmente suele denominarse también Especificación de requisitos de software, la cual esta definida por el estándar de 830 de la IEEE\cite{IEEEStd830}. en el cual se presenta el procedimiento que se debe realizar para poder desarrollar un buen documento de requerimientos, el cual es esencial y se quiere desarrollar una buena aplicación.\\
 
-\section{Análisis de alto Nivel de Requerimientos}
+El documento de requerimientos según el estándar de la IEEE debe estar compuesto por un mínimo de items, los cuales se pueden ver de forma reducida en la Tabla(\ref{tab:2}).\\
+
+\begin{table}[h!]
+\begin{center}
+\begin{tabular}{|l|}
+\hline \textbf{Documento de Requerimientos} \\
+1. Introducción \\
+1.1 Propósito \\
+1.2 Alcance \\
+1.3 Definiciones, siglas, y abreviaciones \\
+1.4 Referencias \\
+1.5 Apreciación global \\
+2. Descripción global \\
+2.1 Perspectiva del producto \\
+2.2 Funciones del producto \\
+2.3 Características del usuario \\
+2.4 Restricciones \\
+2.5 Atención y dependencias \\
+3. Los requisitos específicos \\
+ Apéndices \\
+ Indice \\ 
+\hline 
+\end{tabular} 
+\end{center}
+\caption{Componentes mínimos del Documento de requerimientos definido por el estándar IEEE 830\cite{IEEEStd830}}
+\label{tab:2}
+\end{table}
 
 
+Para esta etapa de la metodología se pretende realizar este documento de requerimientos definido por el estándar de la IEEE\cite{IEEEStd830}, pero que resulte acorde a la aplicación objetivo de este proyecto.\\
+
+%\section{Análisis de alto Nivel de Requerimientos}
 
 \section{Elaboración de Arquitectura}
+
+La Arquitectura del Software es el diseño de más alto nivel de la estructura de un sistema.\\
+
+Una Arquitectura de Software, también denominada Arquitectura lógica, consiste en un conjunto de patrones y abstracciones coherentes que proporcionan el marco\\
+Una arquitectura de software se selecciona y diseña con base en objetivos y restricciones. Los objetivos son aquellos prefijados para el sistema de información, pero no solamente los de tipo funcional, también otros objetivos como la mantenibilidad, auditabilidad, flexibilidad e interacción con otros sistemas de información. Las restricciones son aquellas limitaciones derivadas de las tecnologías disponibles para implementar sistemas de información. Unas arquitecturas son más recomendables de implementar con ciertas tecnologías mientras que otras tecnologías no son aptas para determinadas arquitecturas. Por ejemplo, no es viable emplear una arquitectura de software de tres capas para implementar sistemas en tiempo real.\\
+
+La arquitectura de software define, de manera abstracta, los componentes que llevan a cabo alguna tarea de computación, sus interfaces y la comunicación entre ellos. Toda arquitectura debe ser implementable en una arquitectura física, que consiste simplemente en determinar qué computadora tendrá asignada cada tarea.\\
+La arquitectura de software, tiene que ver con el diseño y la implementación de estructuras de software de alto nivel. Es el resultado de ensamblar un cierto número de elementos arquitectónicos de forma adecuada para satisfacer la mayor funcionalidad y requerimientos de desempeño de un sistema, así como requerimientos no funcionales, como la confiabilidad, escalabilidad, portabilidad, y disponibilidad.
+
+Arquitectura Modelo Vista controlador
+
+El Modelo Vista Controlador (MVC) es un patrón de arquitectura de software que separa los datos y la lógica de negocio de una aplicación de la interfaz de usuario y el módulo encargado de gestionar los eventos y las comunicaciones. Para ello MVC propone la construcción de tres componentes distintos que son el modelo, la vista y el controlador, es decir, por un lado define componentes para la representación de la información, y por otro lado para la interacción del usuario1 2 . Este patrón de diseño se basa en las ideas de reutilización de código y la separación de conceptos, características que buscan facilitar la tarea de desarrollo de aplicaciones y su posterior mantenimiento.
 
 \section{Definición de algoritmos y Desarrollo de la Aplicación}
 
 \section{Documentación de la Aplicación}
 
 \section{Pruebas y Validación}
+
+\section{Cronograma de Actividades}

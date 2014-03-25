@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2012/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2014/dev)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: TesisMSc.aux
 A level-1 auxiliary file: HojaTitulo/HojaTituloMSc.aux
@@ -9,50 +9,59 @@ A level-1 auxiliary file: Kap5/Kap5.aux
 The style file: plaindin_esp.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: BibliMSc.bib
+Warning--to sort, need author or key in IEEEStd830
+Warning--empty author in IEEEStd830
 Warning--empty edition in baker1963xiith
 Warning--empty edition in GGNASS
 Warning--Es gibt einen Verlagsort, aber keinen Verlag in GGNASS
 Warning--empty edition in GPStkug
+Warning--empty edition in deitel2004
+Warning--empty edition in gamma2002
+Warning--empty edition in jacobson2004
 Warning--empty edition in lenz08
-You've used 15 entries,
+Warning--empty edition in lopez2004
+Warning--empty edition in Moore2002
+Warning--empty edition in serrano2010
+Warning--empty edition in vogel2011
+You've used 24 entries,
             2720 wiz_defined-function locations,
-            709 strings with 7509 characters,
-and the built_in function-call counts, 8166 in all, are:
-= -- 895
-> -- 236
-< -- 360
-+ -- 408
-- -- 86
-* -- 502
-:= -- 1536
-add.period$ -- 18
-call.type$ -- 15
-change.case$ -- 69
+            765 strings with 9053 characters,
+and the built_in function-call counts, 13229 in all, are:
+= -- 1404
+> -- 374
+< -- 497
++ -- 569
+- -- 133
+* -- 912
+:= -- 2423
+add.period$ -- 27
+call.type$ -- 24
+change.case$ -- 110
 chr.to.int$ -- 0
-cite$ -- 20
-duplicate$ -- 187
-empty$ -- 438
-format.name$ -- 117
-if$ -- 1488
+cite$ -- 38
+duplicate$ -- 308
+empty$ -- 825
+format.name$ -- 186
+if$ -- 2490
 int.to.chr$ -- 0
-int.to.str$ -- 15
-missing$ -- 15
-newline$ -- 83
-num.names$ -- 30
-pop$ -- 81
+int.to.str$ -- 24
+missing$ -- 34
+newline$ -- 141
+num.names$ -- 46
+pop$ -- 133
 preamble$ -- 1
-purify$ -- 69
+purify$ -- 110
 quote$ -- 0
-skip$ -- 455
+skip$ -- 640
 stack$ -- 0
-substring$ -- 592
-swap$ -- 63
-text.length$ -- 46
+substring$ -- 1045
+swap$ -- 105
+text.length$ -- 77
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 52
-warning$ -- 5
-while$ -- 75
-width$ -- 17
-write$ -- 192
-(There were 5 warnings)
+type$ -- 74
+warning$ -- 14
+while$ -- 122
+width$ -- 26
+write$ -- 317
+(There were 14 warnings)
