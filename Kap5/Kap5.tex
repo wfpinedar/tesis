@@ -87,18 +87,17 @@ Dado que es un proceso tedioso (menos creativo) el de documentar la aplicación e
 
 \section{Pruebas y Validación}
 
-Para realizar la etapa de pruebas es necesario definir primero algunos resultados que se esperan y con los obtenidos realizar una comparación, la cual nos permita sacar algunas conclusiones acerca de la bondad de los resultados que arrojo el desarrollo del proyecto.\\
+Para la realización de la etapa de pruebas sera necesario comparar los resultados obtenidos con la aplicación desarrollada y algunas de las alternativas similares que se listaron en el apartado de antecedentes, con el fin de poder hacer una evaluación comparativa con respecto a otras aplicaciones que tienen una mayor trayectoria en el procesamiento de datos RINEX.\\
 
-Primero que todo es necesario definir las hipótesis iniciales de los resultados esperados, las cuales se listan a continuación:\\
+Precisamente para poder hacer efectiva la etapa de pruebas y validación de los resultados obtenidos se hace necesario definir un procedimiento estándar que permita hacer la comparación de la forma mas imparcial posible y que evalué las mismas capacidades en cada uno de los casos. Todo esto con el fin de hacer la comparación de la mejor manera posible.\\
 
-\begin{enumerate}
-\item El aplicativo resultado del desarrollo de este proyecto esta bajo una licencia libre, ademas no tienen costo alguno para su uso y soporta datos en formato RINEX.
-\item Los resultados obtenidos al procesar datos con el aplicativo son comparables en calidad a los obtenidos con otras aplicaciones similares ya existentes.
-\item El acceso a la aplicación es fácil para los usuarios y el aplicativo no es confuso para estos y si lo es en algún punto la documentación esta en capacidad de acarar cualquier duda. 
-\item La capacidad de procesamiento es independiente del equipo del usuario, toda la carga del procesamiento la asume el servidor que hace las funciones de Huésped de la aplicación.
-\end{enumerate}
-
-Teniendo estas hipótesis iniciales se deben hacer las pruebas pertinentes sobre el sistema para poder determinar si se cumplen lo cual proporciona como ya se dijo la bondad del resultado de la aplicación, en el proceso de desarrollo del proyecto también se deben definir las estrategias que serán usadas para el fin de comprobar estas hipótesis.\\
+Para el caso que compete a este proyecto se ha definido un proceso que se puede definir como lo mas sencillos posible en el cual intervienen los factores mas relevantes en el procesamiento de datos satelitales y se ha realizado el diagrama que se muestra en la Figura(\ref{fig:ProcPrueba}). El cual se llamara \textit{Diagrama del Proceso de Pruebas y Validación} y sera el punto de control para las pruebas y validación de resultados de la aplicación desarrollada.\\
+\begin{figure}[H]
+\centering
+\includegraphics[width=14cm]{Kap4/procesamientotesis.png} %height=8cm,
+\caption[Proceso de Pruebas y Validación]{Diagrama del Proceso de Pruebas y Validación}
+\label{fig:ProcPrueba}
+\end{figure}
 
 \section{Cronograma de Actividades}
 

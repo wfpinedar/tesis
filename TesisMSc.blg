@@ -6,6 +6,7 @@ A level-1 auxiliary file: Kap2/Kap2.aux
 A level-1 auxiliary file: Kap3/Kap3.aux
 A level-1 auxiliary file: Kap4/Kap4.aux
 A level-1 auxiliary file: Kap5/Kap5.aux
+A level-1 auxiliary file: Anexos/Anexos.aux
 The style file: plaindin_esp.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: BibliMSc.bib
@@ -29,7 +30,7 @@ Warning--empty edition in tate1988
 Warning--empty edition in vogel2011
 You've used 28 entries,
             2720 wiz_defined-function locations,
-            788 strings with 9717 characters,
+            789 strings with 9734 characters,
 and the built_in function-call counts, 15356 in all, are:
 = -- 1619
 > -- 425

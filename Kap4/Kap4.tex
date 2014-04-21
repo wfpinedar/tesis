@@ -1,14 +1,14 @@
 \chapter{Contexto Teórico}
 En este capítulo se realiza una somera exposición acerca de los temas principales y conceptos teóricos más relevantes relacionados con el desarrollo del trabajo, la explicación de algunos conceptos que resultan esenciales para que se pueda entender cómo se realiza la interacción de los elementos que componen al desarrollo que se desea realizar, siendo estos de dos áreas muy diferentes pero como pretende este trabajo demostrar complementarias.\\
 
-Como primera medida se realiza la exposición  los principales conceptos de geodesia satelital  referentes  al sistema global de navegación por satélite GNSS (Global Navigation Satellite System), posteriormente se presenta el proceso que se pretende analizar más a fondo con el procesamiento de datos como es la técnica de posicionamiento por punto preciso y para finalizar el capítulo una explicación de las herramientas que serán evaluadas en la etapa de la arquitectura del sistema en el desarrollo metodológico del trabajo.\\
+Como primera medida se realiza la exposición  los principales conceptos de geodesia satelital  referentes  al sistema global de navegación por satélite GNSS (Global Navigation Satellite System), posteriormente se presenta el proceso que se pretende analizar más a fondo con el procesamiento de datos como es la técnica de posicionamiento por punto preciso y para finalizar el capítulo una explicación de las herramientas que serán evaluadas en la etapa de la arquitectura del sistema en el desarrollo metodológico del trabajo.
 
 \section{Sistema GPS (Global Positioning System)}
 Se presenta en este ítem una introducción a lo que son los aspectos más relevantes del sistema de posicionamiento global, como lo son quien fue el que lo financió y desarrollo, cuantos satélites lo componen, la longitud de onda en que transmite la señales y sus aplicaciones primarias. con el fin de dar a conocer un pequeño resumen de este sistema antes de entrar en el tema de los datos que este proporciona y el uso de estos.\\
 
 Un resumen muy elemental pero que cumple con el propósito de explicar sistema de posicionamiento global (GPS) es el siguiente: Perteneciente al gobierno de los estados unidos, este provee una señal de uso civil. Esta señal es transmitida de manera simultánea por una constelación compuesta de 32 satélites, cada uno de estos se transporta sobre una órbita de 12 horas, generalmente desde cualquier posición se puede tener como visibles de 8 a 12 satélites del total que componen esta constelación, lo cual es un elemento que facilita la captura de datos en un proceso de obtención de datos con un receptor para el fin de tener observaciones de navegación con la cuales poder trabajar posteriormente y de esta forma que no se presenten rastros de intermitencia en la señal provocados por una no transmisión de datos o pérdida de calidad en la información al no haber suficientes satélites\cite{GPStkug,baker1963xiith}.\\
 
-Cada uno de los satélites transmite una señal en el espectro electromagnético, estas señales son propagadas a 1575.42 y 1227.6 MHz, son llamadas $L_{1}$ y $L_{2}$ respectivamente. En la actualidad la señal civil es ta designada únicamente a $L_{1}$, la señal de $L_{2}$ es usada para aplicaciones militares. La señal civil tiene dos componentes, un código de tiempo y un mensaje de navegación. Por diferenciación del código de tiempo recibido con el código de tiempo interno el receptor es capaz de determinar la distancia, o el rango, que esta señal ha viajado. Este rango de observación es afectado por errores en el reloj del receptor, por lo que se llama un pseudorango. El mensaje de navegación contiene las efemérides de satélite, las cuales representan un modelo numérico de la órbita del satélite\cite{GPStkug,GUI2012,baker1963xiith}.\\
+Cada uno de los satélites transmite una señal en el espectro electromagnético, estas señales son propagadas a 1575.42 y 1227.6 MHz, son llamadas $L_{1}$ y $L_{2}$ respectivamente. En la actualidad la señal civil es ta designada únicamente a $L_{1}$, la señal de $L_{2}$ es usada para aplicaciones militares. La señal civil tiene dos componentes, un código de tiempo y un mensaje de navegación. Por diferenciación del código de tiempo recibido con el código de tiempo interno el receptor es capaz de determinar la distancia, o el rango, que esta señal ha viajado. Este rango de observación es afectado por errores en el reloj del receptor, por lo que se llama un pseudorango. El mensaje de navegación contiene las efemérides de satélite, las cuales representan un modelo numérico de la órbita del satélite\cite{GPStkug,GUI2012,baker1963xiith}.
 
 \section{GLONASS}
 
@@ -16,14 +16,14 @@ GLONASS por sus sigla en ruso Global'naya Navigatsionnaya Sputnikovaya Sistema, 
 
 La constelación del sistema GLONASS está compuesta por 24 satélites contenidos en tres planos orbitales, que tienen un nodo ascendente (o inclinación de la orbita como se ve en la Figura (\ref{fig:IncliOrbit})) de 120\textdegree y un argumento en latitud de 15\textdegree. Cada uno de los planos orbitales aloja un total de 8 satélites de la constelación espaciados de forma regular, con un argumento en longitud de 45\textdegree. Estos planos están inclinados un con respecto al Ecuador cerca de 64.8\textdegree. Los satélites de esta constelación se encuentran aproximadamente a una distancia de 19100 Km de la tierra en órbitas casi circulares, tiene un periodo orbital de 675.8 minutos ( aproximadamente 11 horas y 26 minutos),  esto quiere decir que se garantiza un mínimo de 5 satélites visibles, con los cual se puede concluir que la constelación de GLONASS está en capacidad de proporcionar una cobertura continua y global para fines de ejecución de observaciones de navegación\cite{GGNASS}.\\
 
-\begin{figure}[H]
+\begin{figure}[!ht]
 \centering
 \includegraphics[width=12cm]{Kap3/Fig_Kap3/Inclinacionorbita.jpg} %height=8cm,
 \caption[Inclinación Satélite]{Inclinación orbital de un satélite}
 \label{fig:IncliOrbit}
 \end{figure}
 
-La constelación de satélites GLONASS transmite en las bandas $L_{1}$ y $L_{2}$ las cuales están aproximadamente distribuidas de la siguiente forma, L1 es transmitida en una longitud de onda que se encuentra entres los 1598.0625 - 1604.25 MHz, mientras que $L_{2}$ lo hace en la longitud aproximada de 1242.9375 - 1247.75 MHz. Por estas bandas GLONASS transmite el código $P$, mientras que el código $C/A$ de momento esta solo en la banda $L_{1}$, pero se pensó que también esté disponible en la banda $L_{2}$ para uso civil, que con la entrada en funcionamiento de la constelación GLONASS-M en 2005 este hecho se hace realidad, aumentando la calidad de los datos obtenidos en cuanto a mejores prestaciones en precisión de los datos y calidad de la señal\cite{GGNASS,GPStkug,baker1963xiith}.\\
+La constelación de satélites GLONASS transmite en las bandas $L_{1}$ y $L_{2}$ las cuales están aproximadamente distribuidas de la siguiente forma, L1 es transmitida en una longitud de onda que se encuentra entres los 1598.0625 - 1604.25 MHz, mientras que $L_{2}$ lo hace en la longitud aproximada de 1242.9375 - 1247.75 MHz. Por estas bandas GLONASS transmite el código $P$, mientras que el código $C/A$ de momento esta solo en la banda $L_{1}$, pero se pensó que también esté disponible en la banda $L_{2}$ para uso civil, que con la entrada en funcionamiento de la constelación GLONASS-M en 2005 este hecho se hace realidad, aumentando la calidad de los datos obtenidos en cuanto a mejores prestaciones en precisión de los datos y calidad de la señal\cite{GGNASS,GPStkug,baker1963xiith}.
 
 \section{GNSS}
 
@@ -32,13 +32,13 @@ Sistema global de navegación por satélite, en sus siglas en ingles GNSS (Global 
 GNSS, permite determinar la posición (longitud, latitud, altura) y el tiempo, a través de las constelaciones de satélites, receptores y vigilancia de la integridad del sistema con el aumento requerido en la operación prevista. (Anexo 10 del Convenio sobre Aviación Civil Internacional, 2006) 
 Primera fase (GNSS-1): Formado por los dos sistemas de navegación por satélite operativos actuales (el GPS estadounidense y el GLONASS ruso), junto con los sistemas de aumento: SBAS, GBAS, ABAS\cite{TUED}.\\
 
-Segunda fase (GNSS-2): Formado por el nuevo sistema Galileo, el reciente COMPASS chino y las actualizaciones de los actuales GPS y GLONASS\cite{TUED}.\\
+Segunda fase (GNSS-2): Formado por el nuevo sistema Galileo, el reciente COMPASS chino y las actualizaciones de los actuales GPS y GLONASS\cite{TUED}.
 
 \begin{itemize}
 \item Precisión: grado de coincidencia entre la posición y/o Velocidad estimada o medida con respecto a la Posición y/o velocidad real.\\
 \item Integridad (incluyendo tiempo hasta alerta): La seguridad de que todas las funciones de un sistema son realizadas dentro de los límites operacionales, proporcionando el sistema de navegación las alarmas correspondientes con el tiempo suficiente al usuario cuando el sistema no deba usarse para la navegación o una operación dada.\\
 \item Continuidad de servicio: Es la posibilidad de que el sistema de navegación proporcione el servicio sin interrupción durante una operación dada.\\
-\item Disponibilidad del servicio: Es la posibilidad de que el sistema pueda realizar su función al inicio de una operación dada.\\
+\item Disponibilidad del servicio: Es la posibilidad de que el sistema pueda realizar su función al inicio de una operación dada.
 \end{itemize}
 
 \section{Datos RINEX y Efemérides Precisas SP-3}
@@ -47,13 +47,13 @@ El formato de intercambio independiente del receptor como sería la traducción li
 
 El formato RINEX fue desarrollado por el Servicio Geodésico Nacional (NGS) en los Estados Unidos y la Universidad de Berna en Suiza. RINEX son realmente tres definiciones de formato que permiten el almacenamiento de observaciones GPS, información del mensaje de navegación GPS, y datos meteorológicos asociados con observaciones GPS. La biblioteca GPSTk contiene clases para leer y escribir datos RINEX en su version 2.1 y 3, de todos los tipos (observados, mensajes de navegación y meteorológicos)\cite{GPStkug}.\\
 
-Por otra parte se hace necesaria una definicion del contenido de los ficheros SP-3, los cuales son usados para almacenar informacion referente a las efemerides de los satelites. Usualmente esta informacion esta asociada a las efemerides precisas. La libreria que se usara para el desarrollo de la parte de procesamiento de datos GPSTK, tiene la capacidad de manipular archivos de tipo SP-3a y SP-3-c. El formato SP-3 fue diseñado originalmente por el Servicio Geodésico Nacional (NGS) de los Estados Unidos\cite{GPStkug}.\\
+Por otra parte se hace necesaria una definicion del contenido de los ficheros SP-3, los cuales son usados para almacenar informacion referente a las efemerides de los satelites. Usualmente esta informacion esta asociada a las efemerides precisas. La libreria que se usara para el desarrollo de la parte de procesamiento de datos GPSTK, tiene la capacidad de manipular archivos de tipo SP-3a y SP-3-c. El formato SP-3 fue diseñado originalmente por el Servicio Geodésico Nacional (NGS) de los Estados Unidos\cite{GPStkug}.
 
 \section{Procesamiento por Punto Preciso}
 
 Precise Point Positioning (PPP) es un método de posicionamiento que utiliza los productos extensamente y fácilmente disponibles de órbitas y correcciones de reloj del Sistema Global de Navegación por Satélite (GNSS), por ejemplo, obtenidos a través del Servicio Internacional de GNSS\footnote{IGS (02-03-2014)- \url{http://igs.org}}, para realizar el posicionamiento de un punto utilizando tan solo un único receptor GNSS.\cite{ppp12,ELPPP2000,ppp02}.\\
 
-En \cite{kouba2001} se dice que el modelo usado por el PPP es a grandes rasgos similar al que utiliza el servicio de posicionamiento estándar ofrecido por el GPS. También se puede destacar con respecto al procesamiento por punto preciso que el procesamiento de un día completo de observaciones estáticas de alta receptores de frecuencia dual con un software de procesamiento de PPP produce exactitud posicional en el nivel de centímetro, tanto horizontal como verticalmente. Acortar el período de tiempo de observaciones continuas y pasar de modo estático a cinemático disminuirá la precisión. Por ejemplo 6 horas de observaciones cinemáticas suelen dar precisión a nivel de unos pocos centímetro, mientras que 1 hora de las observaciones da precisión a nivel de decímetro\cite{ppp06}.\\
+En \cite{kouba2001} se dice que el modelo usado por el PPP es a grandes rasgos similar al que utiliza el servicio de posicionamiento estándar ofrecido por el GPS. También se puede destacar con respecto al procesamiento por punto preciso que el procesamiento de un día completo de observaciones estáticas de alta receptores de frecuencia dual con un software de procesamiento de PPP produce mayor precisión posicional hasta nivel de centímetro, tanto horizontal como verticalmente. Acortar el período de tiempo de observaciones continuas y pasar de modo estático a cinemático disminuirá la precisión. Por ejemplo 6 horas de observaciones cinemáticas suelen dar precisión a nivel de unos pocos centímetro, mientras que 1 hora de las observaciones da precisión a nivel de decímetro\cite{ppp06}.\\
 
 El algoritmo para procesamiento por punto preciso PPP fue desarrollado para trabajar en base solo a observaciones del sistema GPS. La precisión, disponibilidad y fiabilidad de los resultados del PPP sin embargo son bastante dependes del número de satélites visibles. Bajo entornos como zonas urbanas en barrancos, montañas y minas a cielo abierto, por ejemplo, el número de satélites GPS visibles es a menudo insuficiente para la determinación de la posición\cite{Tsuji2000}. Además, incluso en el área abierta donde los satélites GPS disponibles son suficientes, la exactitud y la fiabilidad pueden todavía insuficientes debido a una mala geometría satelital PPP. Una posible forma de aumentar la disponibilidad de satélites, así como la fiabilidad de los resultados de posicionamiento es integrar las observaciones GPS y GLONASS. El beneficio de esta integración es evidente sobre todo para aplicaciones en zonas urbanas de difícil acceso, montaña y entornos de minería a cielo abierto\cite{ppp07}.\\
 
@@ -89,7 +89,7 @@ Adicionalmente como se muestra en la tabla \ref{tab:1} que expresa en forma resu
 \hline 
 \end{tabular} 
 \end{center}
-\caption{Comparación de los tipos de corrección utilizados por la técnica PPP y diferencial de posicionamiento.}
+\caption{Comparación de los tipos de corrección utilizados por la técnica PPP y diferencial de posicionamiento.\cite{ppp12}}
 \label{tab:1}
 \end{table}
 
@@ -101,13 +101,13 @@ Los usuarios de GPS emplean prácticamente todas las arquitecturas de cómputo y v
 
 El conjunto de herramientas GPSTk consta de una biblioteca núcleo, bibliotecas auxiliares, y un conjunto de aplicaciones. GPSTk también proporciona una amplia gama de funciones que resuelven problemas de procesamiento asociados con GPS, así como el procesamiento utilizando formatos estándar: como RINEX. Las bibliotecas son la base de las aplicaciones más avanzadas que son distribuida de manera conjunta con el conjunto que conforma GPSTk\cite{GPStkug}.\\
 
-El conjunto de software que conforma GPSTk es patrocinado por el Laboratorio Espacial y de Geofísica, que hace parte de los Laboratorios de Investigación Aplicada de la Universidad de Texas en Austin. GPSTk es el producto de la investigación realizada en GPS ARL: UT desde antes del primer satélite lanzado en 1978, es el esfuerzo conjunto de muchos ingenieros de software y científicos. En 2003, el personal de investigación en ARL: UT decidió promover como código abierto gran parte de su software de procesamiento para GPS como producto de ese evento nace GPSTk\cite{GPStkug}.\\
+El conjunto de software que conforma GPSTk es patrocinado por el Laboratorio Espacial y de Geofísica, que hace parte de los Laboratorios de Investigación Aplicada de la Universidad de Texas en Austin. GPSTk es el producto de la investigación realizada en GPS ARL: UT desde antes del primer satélite lanzado en 1978, es el esfuerzo conjunto de muchos ingenieros de software y científicos. En 2003, el personal de investigación en ARL: UT decidió promover como código abierto gran parte de su software de procesamiento para GPS como producto de ese evento nace GPSTk\cite{GPStkug}.
 
 \section{Ruby on Rails}
 
-Ruby on rails, generalmente abreviado como rails, es un completo framework de desarrollo para aplicaciones web, escrito en el lenguaje de programación Ruby. el uso de este framework depende mucho de la experiencia que se tenga en el ámbito de la programación. Este framework tiene que ser visto desde el contexto del desarrollo de aplicaciones web si realmente se quiere apreciar su potencialidad\cite{lenz08}.\\
+Ruby on Rails, generalmente abreviado como Rails, es un completo framework de desarrollo para aplicaciones web, escrito en el lenguaje de programación Ruby. el uso de este framework depende mucho de la experiencia que se tenga en el ámbito de la programación. Este framework tiene que ser visto desde el contexto del desarrollo de aplicaciones web si realmente se quiere apreciar su potencialidad\cite{lenz08}.\\
 
-En el desarrollo  de este trabajo se pretende realizar una aplicación que siga el modelo vista controlador, este es el mismo que utiliza ruby on rails, por ese motivo es que se ha hecho la elección del mismo, que en este caso va a desempeñar la labor de controlador. Desempeñando la función de Recibir los datos y enviarlos para que sean procesados, luego de este proceso los datos los enviara vía correo electrónico a el usuario que se realice la solicitud, de esta forma el usuario tendrá procesados sus datos por medio de la técnica de procesamiento por punto preciso y sin antes haber tenido que instalar un programa especializado para este tipo de labor.\\
+En el desarrollo  de este trabajo se pretende realizar una aplicación que siga el modelo vista controlador, este es el mismo que utiliza ruby on rails, por ese motivo es que se ha hecho la elección del mismo, que en este caso va a desempeñar la labor de controlador. Desempeñando la función de Recibir los datos y enviarlos para que sean procesados, luego de este proceso los datos los enviara vía correo electrónico a el usuario que se realice la solicitud, de esta forma el usuario tendrá procesados sus datos por medio de la técnica de procesamiento por punto preciso y sin antes haber tenido que instalar un programa especializado para este tipo de labor.
 
 \section{Bootstrap}
 
@@ -115,7 +115,7 @@ Bootstrap es un producto de código abierto desarrollado por Mark Otto y Jacob Th
 
 En forma más explícita Bootstrap es un conjunto de estilos y funciones que permiten un desarrollo ágil de la interfaz de un sitio web, este concepto permite poder hacer ese desarrollo usando funcionalidades que actualmente son estándar en esta área del desarrollo web. Este aspecto permite que quien realiza su aplicación pueda prestar los servicios de la misma para diferentes tipos de dispositivos, no solo computadores de escritorio sino también tabletas y dispositivos móviles.\\
 
-Por las razones expuestas anteriormente es que se recurre a esta tecnología como herramienta para realizar el desarrollo de la interfaz web de la aplicación que se obtendrá como producto del desarrollo de este proyecto.\\
+Por las razones expuestas anteriormente es que se recurre a esta tecnología como herramienta para realizar el desarrollo de la interfaz web de la aplicación que sera el producto del proyecto.
 
 \section{Antecedentes}
 
