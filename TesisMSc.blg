@@ -2,12 +2,13 @@ This is BibTeX, Version 0.99d (TeX Live 2014/dev)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: TesisMSc.aux
 A level-1 auxiliary file: HojaTitulo/HojaTituloMSc.aux
+A level-1 auxiliary file: Kap1/Kap1.aux
 A level-1 auxiliary file: Kap2/Kap2.aux
 A level-1 auxiliary file: Kap3/Kap3.aux
 A level-1 auxiliary file: Kap4/Kap4.aux
 A level-1 auxiliary file: Kap5/Kap5.aux
-A level-1 auxiliary file: Anexos/Anexos.aux
 The style file: plaindin_esp.bst
+A level-1 auxiliary file: Anexos/Anexos.aux
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: BibliMSc.bib
 Warning--to sort, need author or key in IEEEStd830
@@ -28,45 +29,45 @@ Warning--empty edition in serrano2010
 Warning--empty edition in sommerville2005
 Warning--empty edition in tate1988
 Warning--empty edition in vogel2011
-You've used 28 entries,
+You've used 29 entries,
             2720 wiz_defined-function locations,
-            789 strings with 9734 characters,
-and the built_in function-call counts, 15356 in all, are:
-= -- 1619
-> -- 425
-< -- 552
-+ -- 633
-- -- 149
-* -- 1067
-:= -- 2792
-add.period$ -- 31
-call.type$ -- 28
-change.case$ -- 126
+            799 strings with 10070 characters,
+and the built_in function-call counts, 16522 in all, are:
+= -- 1744
+> -- 463
+< -- 613
++ -- 700
+- -- 163
+* -- 1160
+:= -- 3000
+add.period$ -- 32
+call.type$ -- 29
+change.case$ -- 135
 chr.to.int$ -- 0
-cite$ -- 46
-duplicate$ -- 359
-empty$ -- 1004
-format.name$ -- 210
-if$ -- 2922
+cite$ -- 47
+duplicate$ -- 378
+empty$ -- 1053
+format.name$ -- 231
+if$ -- 3124
 int.to.chr$ -- 0
-int.to.str$ -- 28
-missing$ -- 42
-newline$ -- 167
-num.names$ -- 54
-pop$ -- 155
+int.to.str$ -- 29
+missing$ -- 44
+newline$ -- 174
+num.names$ -- 56
+pop$ -- 163
 preamble$ -- 1
-purify$ -- 126
+purify$ -- 135
 quote$ -- 0
-skip$ -- 722
+skip$ -- 783
 stack$ -- 0
-substring$ -- 1246
-swap$ -- 120
-text.length$ -- 88
+substring$ -- 1362
+swap$ -- 131
+text.length$ -- 97
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 82
+type$ -- 86
 warning$ -- 18
-while$ -- 141
-width$ -- 30
-write$ -- 373
+while$ -- 152
+width$ -- 31
+write$ -- 388
 (There were 18 warnings)
